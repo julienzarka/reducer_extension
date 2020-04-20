@@ -1,0 +1,14 @@
+name: reducer_extension
+version: 0.0.1
+description: Annotation for generating `reducer` extensions code using `reducer_extension_gen`.
+homepage: https://github.com/julienzarka/reducer_extension/tree/master/reducer_extension
+repository: https://github.com/julienzarka/reducer_extension
+issue_tracker: https://github.com/julienzarka/reducer_extension/issues
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dev_dependencies:
+  build_runner: ">=1.0.0 <2.0.0"
+  test: "<2.0.0"
+  reducer_extension_gen: ">=0.0.1 <1.0.0"
