@@ -1,14 +1,14 @@
 import 'package:meta/meta.dart' show immutable;
 import 'package:reducer_extension/reducer_extension.dart';
 
-// Make sure you add redux header as it is used in generated code
+/// Make sure to import redux
 import 'package:redux/redux.dart';
 
 /// Make sure that `part` is specified, even before launching the builder
 part 'example.g.dart';
 
 @immutable
-@reducer
+@actionReducer
 class SimpleObject {
   final String id;
   final int value;

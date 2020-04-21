@@ -9,8 +9,8 @@
 library reducer_extension_gen.builder;
 
 import 'package:build/build.dart' show Builder, BuilderOptions;
-import 'package:source_gen/source_gen.dart' show SharedPartBuilder;
 import 'package:reducer_extension_gen/src/reducer_generator.dart';
+import 'package:source_gen/source_gen.dart' show SharedPartBuilder;
 
 /// Supports `package:build_runner` creation and configuration of
 /// `reducer_extension_gen`.
@@ -18,5 +18,5 @@ import 'package:reducer_extension_gen/src/reducer_generator.dart';
 /// Not meant to be invoked by hand-authored code.
 Builder Reducer(BuilderOptions _) => SharedPartBuilder(
       [ReducerGenerator()],
-      'Reducer',
+      'ActionReducer',
     );

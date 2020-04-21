@@ -14,7 +14,7 @@ extension StringExtension on String {
 }
 
 /// A `Generator` for `package:build_runner`
-class ReducerGenerator extends GeneratorForAnnotation<Reducer> {
+class ReducerGenerator extends GeneratorForAnnotation<ActionReducer> {
   @override
   String generateForAnnotatedElement(
     Element element,

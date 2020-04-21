@@ -23,7 +23,8 @@ class UpdateBasicClassTest {
 BasicClass updateBasicClassId(BasicClass state, UpdateBasicClassId action) =>
     state.id != action.id ? state.copyWith(id: action.id) : state;
 
-BasicClass updateBasicClassTest(BasicClass state, UpdateBasicClassTest action) =>
+BasicClass updateBasicClassTest(
+        BasicClass state, UpdateBasicClassTest action) =>
     state.test != action.test ? state.copyWith(test: action.test) : state;
 
 Reducer<BasicClass> basicClassReducers = combineReducers<BasicClass>([

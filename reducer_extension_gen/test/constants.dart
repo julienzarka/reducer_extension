@@ -6,11 +6,11 @@ const String annotationsBase = r'''
 library reducer_extension;
 
 /// Annotation used to indicate that the `Reducer` extension should be generated.
-const reducer = Reducer();
+const actionReducer = ActionReducer();
 
 class Reducer {
-  /// Creates a new [Reducer] instance.
-  const Reducer();
+  /// Creates a new [ActionReducer] instance.
+  const ActionReducer();
 }
 ''';
 
@@ -21,8 +21,8 @@ import 'package:redux/redux.dart';
 
 part 'basic_class.g.dart';
 
+@actionReducer
 @immutable
-@reducer
 class BasicClass {
   const BasicClass({this.test, this.id});
 

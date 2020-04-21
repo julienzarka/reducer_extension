@@ -4,8 +4,8 @@ import 'package:redux/redux.dart';
 
 part 'basic_class.g.dart';
 
+@actionReducer
 @immutable
-@reducer
 class BasicClass {
   const BasicClass({this.test, this.id});
 

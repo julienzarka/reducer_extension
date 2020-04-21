@@ -2,10 +2,10 @@
 /// [reducer_extension_gen](https://pub.dev/packages/reducer_extension_gen).
 library reducer_extension;
 
-/// Annotation used to indicate that the `Reducer` extension should be generated.
-const reducer = Reducer();
+/// Annotation used to indicate that the `ActionReducer` extension should be generated.
+const actionReducer = ActionReducer();
 
-class Reducer {
-  /// Creates a new [Reducer] instance.
-  const Reducer();
+class ActionReducer {
+  /// Creates a new [ActionReducer] instance.
+  const ActionReducer();
 }
